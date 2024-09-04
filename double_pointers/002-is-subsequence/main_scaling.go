@@ -1,4 +1,7 @@
+package main
+
 import (
+    "fmt"
     "sort"
 )
 
@@ -42,10 +45,16 @@ func main() {
     // 示例使用
     s1 := "example1"
     s2 := "example2"
-    // ... 更多字符串
+    s3 := "your"
+    s4 := "long"
+    s5 := "string"
+    s6 := "notasubsequence"
 
     // 检查 s1 和 s2 是否为 t 的子序列
-    println(isSubsequence(s1, t, char_indices)) // true or false
-    println(isSubsequence(s2, t, char_indices)) // true or false
-    // ... 更多检查
+    fmt.Println(isSubsequence(s1, t, char_indices)) // true or false
+    fmt.Println(isSubsequence(s2, t, char_indices)) // true or false
+    fmt.Println(isSubsequence(s3, t, char_indices)) // true or false
+    fmt.Println(isSubsequence(s4, t, char_indices)) // true or false
+    fmt.Println(isSubsequence(s5, t, char_indices)) // true or false
+    fmt.Println(isSubsequence(s6, t, char_indices)) // true or false
 }
