@@ -10,7 +10,7 @@ func isSubsequence(s string, t string) bool {
         j++
     }
 
-    if (i == len(s)) {
+    if (i == len(s)) { // 这里不是 i == len(s) -1，因为最后一次匹配成功后，会 i++ 
         return true 
     } else {
         return false 
